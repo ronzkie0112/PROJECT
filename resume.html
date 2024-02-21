@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Nav_Bar_Style.css">
+    <link rel="icon" href="">
+    <link href='https://fonts.googleapis.com/css?family=Lato:400,300,700' rel='stylesheet' type='text/css'>
+    <title>My Profile</title>
+    <style>
+
+.container {
+  max-width: 800px;
+  margin: 50px auto;
+  padding: 30px;
+  background-color: #fff;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  border-radius: 5px;
+}
+
+.header {
+  text-align: center;
+  margin-bottom: 30px;
+}
+.profile-image {
+    width: 150px; 
+    height: auto; 
+    float: left;
+    margin-right: 20px; 
+    border-radius: 50%; 
+}
+
+.full-name {
+  font-size: 36px;
+  font-weight: 700;
+  color: #333;
+}
+
+.position {
+  font-size: 20px;
+  color: #666;
+}
+
+.contact-info {
+  margin-top: 10px;
+  font-size: 16px;
+  color: #888;
+}
+
+.separator {
+  display: inline-block;
+  margin: 0 10px;
+  border-left: 2px solid #ccc;
+  height: 15px;
+  vertical-align: middle;
+}
+
+.section {
+  margin-bottom: 30px;
+}
+
+.section__title {
+  font-size: 24px;
+  font-weight: bold;
+  color: #54AFE4;
+  margin-bottom: 15px;
+  text-transform: uppercase;
+}
+
+.details {
+  line-height: 1.6;
+}
+
+.section__list-item {
+  margin-bottom: 20px;
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 1px solid #eee;
+  padding-bottom: 10px;
+}
+
+.left {
+  flex: 0 0 70%;
+}
+
+.right {
+  flex: 0 0 28%;
+  text-align: right;
+}
+
+.name {
+  font-weight: bold;
+}
+
+.details a {
+  text-decoration: none;
+  color: #54AFE4;
+}
+
+.details a:hover {
+  text-decoration: underline;
+}
+
+.details a:hover {
+  color: #247BA0;
+}
+
+@media screen and (max-width: 600px) {
+  .container {
+    padding: 20px;
+  }
+
+  .full-name {
+    font-size: 30px;
+  }
+
+  .position {
+    font-size: 18px;
+  }
+
+  .section__title {
+    font-size: 22px;
+  }
+}
+    </style>
+</head>
+<body>
+<input type="checkbox" id="burger-toggle">
+<label for="burger-toggle" class="burger-menu">
+  <div class="line"></div>
+  <div class="line"></div>
+  <div class="line"></div>
+</label>
+<div class="menu">
+  <div class="menu-inner">
+    <ul class="menu-nav">
+      <li class="menu-nav-item"><a class="menu-nav-link" href="#"><span>
+            <div>Home</div>
+          </span></a></li>
+      <li class="menu-nav-item"><a class="menu-nav-link" href="resume.html"><span>
+            <div>Profile</div>
+          </span></a></li>
+      <li class="menu-nav-item"><a class="menu-nav-link" href="#"><span>
+            <div>Activities</div>
+          </span></a></li>
+      <li class="menu-nav-item"><a class="menu-nav-link" href="#"><span>
+            <div>Other</div>
+          </span></a></li>
+    </ul>
+    <div class="gallery">
+      <div class="title">
+        <p>Lance Gallery</p>
+      </div>
+      <div class="images">
+        <a class="image-link" href="#">
+          <div class="image" data-label="Star"><img src="https://i.loli.net/2019/11/23/cnKl1Ykd5rZCVwm.jpg" alt=""></div>
+        </a>
+        <a class="image-link" href="#">
+          <div class="image" data-label="Sun"><img src="https://i.loli.net/2019/11/16/FLnzi5Kq4tkRZSm.jpg" alt=""></div>
+        </a>
+        <a class="image-link" href="#">
+          <div class="image" data-label="Tree"><img src="https://i.loli.net/2019/10/18/uXF1Kx7lzELB6wf.jpg" alt=""></div>
+        </a>
+        <a class="image-link" href="#">
+          <div class="image" data-label="Sky"><img src="https://i.loli.net/2019/10/18/buDT4YS6zUMfHst.jpg" alt=""></div>
+        </a>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="container">
+    <img class="profile-image" src="lance.jpg" alt="Profile Image">
+    <br>
+    <div class="header">
+        <div class="full-name">
+            <span class="first-name">Lance</span>
+            <span class="last-name">Mabato</span>
+        </div>
+        <div class="contact-info">
+            <span class="email">lancearon74@gmail.com</span>
+            <span class="separator"></span>
+            <span class="phone">123-456-7890</span>
+        </div>
+        <div class="position">Front-End Developer</div>
+    </div>
+<br>
+<br>
+<br>
+    <div class="details">
+        <div class="section">
+            <div class="section__title">Summary</div>
+            <p>A Senior Front-End Developer leads the creation of user-friendly web interfaces, using HTML, CSS, and JavaScript. They guide projects, collaborate with design teams, and apply expertise in frameworks like React or Angular. They optimize performance, mentor junior developers, and stay updated with the latest tech trends to ensure cutting-edge, responsive web applications.</p>
+        </div>
+
+        <div class="section">
+            <div class="section__title">Skills</div>
+            <div class="skills__item">
+                <div class="left">HTML</div>
+                <div class="right">
+                    <input type="checkbox" id="html" checked>
+                    <label for="html"></label>
+                </div>
+                <div class="left">CSS</div>
+                <div class="right">
+                    <input type="checkbox" id="html" checked>
+                    <label for="html"></label>
+                </div>
+                <div class="left">JavaScript</div>
+                <div class="right">
+                    <input type="checkbox" id="html" checked>
+                    <label for="html"></label>
+                </div>
+                <div class="left">React</div>
+                <div class="right">
+                    <input type="checkbox" id="html" checked>
+                    <label for="html"></label>
+                </div>
+                <div class="left">Angular</div>
+                <div class="right">
+                    <input type="checkbox" id="html" checked>
+                    <label for="html"></label>
+                </div>
+            </div>
+        </div>
+
+        <div class="section">
+            <div class="section__title">Experience</div>
+            <div class="section__list-item">
+                <div class="left">
+                    <div class="name">Company Name</div>
+                    <div class="details">Position: Junior Front-End Developer</div>
+                    <div class="details">Dates: Jan 2020 - Present</div>
+                </div>
+                <div class="right">
+                    <a href="#">Details</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="section">
+            <div class="section__title">Education</div>
+            <div class="section__list-item">
+                <div class="left">
+                    <div class="name">Bestlink College of THe Philippines</div>
+                    <div class="details">Degree: Bachelor's of Science in Computer Technology</div>
+                    <div class="details">Dates: 2022 - 2025</div>
+                </div>
+                <div class="right">
+                    <a href="#">Transcript</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+</html>
